@@ -9,7 +9,7 @@ buildscript {
 }
 
 version = "0.1-SNAPSHOT"
-group = "com.oyvindrobertsen.kotlog"
+group = "com.oyvindrobertsen"
 
 apply plugin: 'kotlin'
 
@@ -24,14 +24,6 @@ dependencies {
 
 task wrapper(type: Wrapper) {
     gradleVersion = "1.6"
-}
-
-sourceSets {
-    main {
-        kotlin {
-            srcDir "src/main/kotlin"
-        }
-    }
 }
 
 apply plugin: 'maven'
